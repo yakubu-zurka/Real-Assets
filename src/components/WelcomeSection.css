@@ -1,0 +1,88 @@
+/* src/WelcomeSection.css */
+
+/* Section Styles */
+.welcome-section {
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    
+  }
+  
+  /* Welcome Message */
+  .welcome-message {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    align-items: left;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .circles{
+      margin-right: 9rem;
+      
+  }
+  
+  /* Circles with Numbers */
+  .circle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    
+     
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color:  black;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    transition: background-color 1s, color 1s;
+    
+  }
+  
+  /* Circle Hover Effects */
+  .circle:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Circle Text */
+  .circle-text p {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  
+  /* Right Side - Image */
+  .welcome-image img {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+  }
+  
+  /* Responsive Layout Adjustments */
+  @media (max-width: 768px) {
+    .circle-text {
+      margin-bottom: 1rem;
+    }
+  
+    .circle {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }
+  
