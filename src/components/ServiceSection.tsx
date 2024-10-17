@@ -1,10 +1,10 @@
-// src/ServicesSection.tsx
+ // src/ServicesSection.tsx
 import React from 'react';
 import './ServiceSection.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import   services from './assets/services.png'; 
-import   buyingguide from './assets/buyingguide.png'; 
-import   RealBanner from './assets/RealBanner.png'; 
+import services from './assets/services.png';
+import buyingguide from './assets/buyingguide.png';
+import RealBanner from './assets/RealBanner.png';
 
 const ServicesSection: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const ServicesSection: React.FC = () => {
       <div className="container">
         {/* Section Title */}
         <div className="text-center">
-          <h2 className="section-title">What We Do</h2>
+          <h2 className="section-title">What we do</h2>
           <hr className="underline" />
           <p className="quote">"When one door closes, buy another <br /> one and open it yourself"</p>
         </div>
@@ -20,9 +20,9 @@ const ServicesSection: React.FC = () => {
         {/* Cards Row */}
         <div className="row justify-content-center">
           {/* First Card */}
-          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 card-container">
+          <div className="col-lg-4 col-md-6 col-sm-12 card-container">
             <div className="card service-card">
-              <img src= {services} alt="Our Services" className="card-img-top" />
+              <img src={services} alt="Our Services" className="card-img-top" />
               <div className="card-body">
                 <h5 className="card-title">Our Services</h5>
                 <p className="card-text">
@@ -33,9 +33,9 @@ const ServicesSection: React.FC = () => {
           </div>
 
           {/* Second Card */}
-          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 card-container">
+          <div className="col-lg-4 col-md-6 col-sm-12 card-container">
             <div className="card service-card">
-              <img src = {buyingguide} alt="House/Land Buying Guide" className="card-img-top" />
+              <img src={buyingguide} alt="House/Land Buying Guide" className="card-img-top" />
               <div className="card-body">
                 <h5 className="card-title">House/Land Buying Guide</h5>
                 <p className="card-text">
@@ -46,9 +46,9 @@ const ServicesSection: React.FC = () => {
           </div>
 
           {/* Third Card */}
-          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 card-container">
+          <div className="col-lg-4 col-md-6 col-sm-12 card-container">
             <div className="card service-card">
-              <img src= {RealBanner} alt="Commercials" className="card-img-top" />
+              <img src={RealBanner} alt="Commercials" className="card-img-top" />
               <div className="card-body">
                 <h5 className="card-title">Commercials</h5>
                 <p className="card-text">Real Asset Ghana LMD</p>

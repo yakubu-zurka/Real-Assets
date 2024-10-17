@@ -1,109 +1,144 @@
-/* src/ServicesSection.css */
-
-/* General Section Styles */
+ /* General Section Styles */
 .services-section {
-    background-color: #C4C4C44D;
-    ; /* Light grey */
-    padding: 60px 0;
-    width: 1440px;
-    height: 479px;
-     
+  background-color: #C4C4C44D;
+  padding: 60px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 479px;
+  top: 1444px;
+  gap: 0px;
+  opacity: 0px;
 
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #DAA532;
+}
+
+.underline {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  margin: 0.5rem auto;
+}
+
+.quote {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 60px;
+  font-weight: 600;
+  top: 1569px;
+}
+
+/* Card Styles */
+.card-container {
+  margin-bottom: 30px;
+}
+
+.service-card {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.178);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Scroll Effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color:  #DAA532;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .underline {
-    width: 50px;
-    height: 5px;
-    background-color:  rgb(0, 0, 0);
-    margin: 0.5rem auto;
+}
+
+.card-container {
+  animation: fadeInUp 2s ease both;
+}
+
+/* Responsive Layout */
+@media (max-width: 1200px) {
+  .services-section {
+    padding: 40px 20px;
   }
-  
+
   .quote {
-    font-size: 3rem;
-    color: #33334F;
-    margin-bottom: 40px;
-    font-weight: 600;
+    font-size: 1.25rem;
   }
-  
-  /* Card Styles */
+
   .card-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  
+}
+
+@media (max-width: 992px) {
   .service-card {
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.178);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-img-top {
-    width:  100%;
     height: auto;
   }
-  
+
   .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 15px;
+    font-size: 1.3rem;
   }
-  
+
   .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    width: 100%;
+  }
+
+  .card-img-top {
+    width: 100%;
+  }
+
+  .quote {
     font-size: 1rem;
-    color: #666;
   }
-  
-  /* Scroll Effect */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .card-container {
-    animation: fadeInUp 2s ease both;
-  }
-  
-  /* Responsive Layout */
-  @media (max-width: 768px) {
-    .card-container {
-      margin-bottom: 20px;
-    }
-
-    .service-card{
-        width: 400px;
-    }
-
-    .card-img-top {
-        width: 100%;
-        height: auto;
-      }
-  
-    .card-title {
-      font-size: 1.3rem;
-    }
-  
-    .card-text {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

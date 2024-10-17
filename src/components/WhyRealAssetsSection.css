@@ -1,0 +1,122 @@
+.why-real-assets-section {
+    background-color:  white;
+     
+    padding: 60px 0;
+    margin-top: 400px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  black;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #454952;
+  }
+  
+  .feature-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  .icon-circle {
+    width: 70px;
+    height: 70px;   
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+    color: blue;
+  }
+  
+  #circle1{
+     background-color: #FEF6F1;
+  }
+
+  
+  #circle2{
+    background-color: #E6F0FD;
+  }
+
+  
+  #circle3{
+    background-color: #EFF9FF;
+  }
+
+  
+  #circle4{
+    background-color: rgba(255, 247, 235, 1);
+  }
+
+  
+  #circle5{
+    background-color: rgba(255, 243, 243, 1);
+  }
+  
+  #circle6{
+    background-color: rgba(239, 255, 234, 1);
+  }
+  .icon-circle img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon-circle:hover {
+    background-color: #DAA520;
+    border-color: #DAA520;
+  }
+  
+  .feature-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: SF Pro Display;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31.03px;
+    color: #454952;
+  }
+  
+  .feature-text p {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23.87px;
+     color: #454952;
+    }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+    .why-real-assets-section {
+        margin-top: 1100px;
+    }
+  
+      
+    .feature-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .icon-circle {
+      margin-bottom: 10px;
+    }
+  }
+  

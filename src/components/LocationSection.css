@@ -1,0 +1,92 @@
+.selection-location {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .large-image, .small-image {
+    position: relative;
+  }
+  
+  .large-image img {
+    transition: transform 0.3s ease;
+    width: 457px;
+    height: 562px;
+    margin-top: 20px;
+  }
+
+  .small-image img{
+    transition: transform 0.3s ease;
+    width: 334px;
+    height: 273px;
+    margin-top: 20px;
+
+  }
+  
+  .info-box {
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 80px;  
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .info-box h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .info-box p {
+    font-size: 0.7rem;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-controls {
+    margin-top: 30px;
+  }
+  
+  .control-btn {
+    background-color: rgba(218, 165, 50, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .control-btn:hover {
+    background-color:   #fff;
+    color: rgba(218, 165, 50, 1);  
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .large-image, .small-image {
+      margin-bottom: 20px;
+    }
+  }
+  
