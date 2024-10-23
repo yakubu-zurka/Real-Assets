@@ -1,0 +1,185 @@
+ /* Navbar */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* About Us Page */
+.about-us-page {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Section */
+.about-hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -130px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.AboutUshero-text {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Hollow Semicircles */
+/* Container for both semicircles */
+.semicircle-container {
+  position: relative;
+  width: 350px; /* Full width of the semicircle */
+  height: 200px; /* Height for the container */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+/* Top Semicircle */
+.semicircle-top {
+  width: 200px;
+  height: 150px;
+  border-top: 5px solid white;
+  border-radius: 300px 300px 0 0; /* Top half of the circle */
+  position: absolute;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+/* Bottom Semicircle */
+.semicircle-bottom {
+  width: 200px;
+  height: 150px;
+  border-bottom: 2px solid white;
+  border-radius: 0 0 250px 250px; /* Bottom half of the circle */
+  position: absolute;
+  bottom: 0;
+}
+
+/* Style for the text between the semicircles */
+.about-us-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* Responsive Design */
+
+/* For Medium Screens (Tablets) */
+@media screen and (max-width: 991px) {
+  .about-hero-section {
+      height: 60vh;
+  }
+
+  .AboutUshero-text {
+      font-size: 40px;
+  }
+
+  .semicircle-container {
+      width: 300px;
+      height: 170px;
+  }
+
+  .semicircle-top,
+  .semicircle-bottom {
+      width: 150px;
+      height: 100px;
+  }
+
+  .about-us-text {
+      font-size: 22px;
+  }
+}
+
+/* For Small Screens (Mobile landscape) */
+@media screen and (max-width: 768px) {
+  .about-hero-section {
+      height: 50vh;
+  }
+
+  .AboutUshero-text {
+      font-size: 32px;
+  }
+
+  .semicircle-container {
+      width: 250px;
+      height: 140px;
+  }
+
+  .semicircle-top,
+  .semicircle-bottom {
+      width: 130px;
+      height: 90px;
+  }
+
+  .about-us-text {
+      font-size: 20px;
+  }
+}
+
+/* For Extra Small Screens (Mobile portrait) */
+@media screen and (max-width: 576px) {
+  .about-hero-section {
+      height: 40vh;
+  }
+
+  .AboutUshero-text {
+      font-size: 28px;
+  }
+
+  .semicircle-container {
+      width: 200px;
+      height: 120px;
+  }
+
+  .semicircle-top,
+  .semicircle-bottom {
+      width: 100px;
+      height: 70px;
+  }
+
+  .about-us-text {
+      font-size: 18px;
+  }
+}

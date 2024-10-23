@@ -71,7 +71,15 @@ const LocationSection = () => {
           <button className="control-btn">{"<"}</button>
           <button className="control-btn">{">"}</button>
         </div>
-      </div>
+     </div>
+
+        <div className="Container-pre-footer">
+            {/* Pre-Footer Box */}
+          <div className="pre-footer">
+            <p>Need a loan to purchase a piece of land?</p>
+            <button className="loan-btn">Get “ASAASE” Loan</button>
+          </div>
+        </div>
     </section>
   );
 };

@@ -1,0 +1,133 @@
+ /* History Section for Larger Screens */
+.history-section {
+  background: rgba(241, 243, 246, 1);
+}
+
+.text-column {
+  padding-right: 120px;
+}
+
+.heading {
+  font-family: Saira;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+  display: flex;
+}
+
+.yellow-line {
+  width: 39px;
+  height: 0px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid rgba(218, 165, 50, 1);
+  margin: 9px 0 0 5px;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.history-text {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Image styling */
+.image-column {
+  display: flex;
+  justify-content: center;
+}
+
+.history-image {
+  width: 726px;
+  height: 700px;
+}
+
+/* Responsive adjustments for medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .text-column {
+      padding-right: 60px; /* Reduce padding for medium screens */
+  }
+
+  .heading {
+      font-size: 1.6rem; /* Increase heading size slightly */
+  }
+
+  .subheading {
+      font-size: 1.2rem; /* Adjust subheading size */
+  }
+
+  .history-text {
+      font-size: 1rem; /* Slight reduction for better readability */
+  }
+
+  .history-image {
+      width: 100%; /* Ensure image becomes responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Responsive adjustments for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .history-section {
+      padding: 40px 0;
+  }
+
+  .text-column {
+      padding-right: 0; /* Remove padding for small screens */
+  }
+
+  .heading {
+      font-size: 1.5rem; /* Further reduce heading size */
+      text-align: center; /* Center the heading */
+  }
+ 
+  .subheading {
+      font-size: 1.2rem; /* Maintain readable font size */
+      text-align: center; /* Center subheading */
+  }
+
+  .history-text {
+      font-size: 1rem; /* Adjust text size */
+      text-align: center; /* Center text */
+  }
+
+  .history-image {
+      width: 100%; /* Full-width image for small screens */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .image-column {
+      margin-top: 30px; /* Add margin to image column */
+  }
+}
+
+/* Responsive adjustments for extra small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .heading {
+      font-size: 1.3rem; /* Smaller font size for extra small screens */
+      text-align: center; /* Center the heading */
+  }
+
+  .subheading {
+      font-size: 1rem; /* Reduce size for readability */
+      text-align: center; /* Center subheading */
+  }
+
+  .history-text {
+      font-size: 0.9rem; /* Further reduce text size */
+      text-align: center; /* Keep text centered */
+  }
+
+  .history-image {
+      width: 100%; /* Full-width image */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .image-column {
+      margin-top: 20px; /* Adjust spacing */
+  }
+}

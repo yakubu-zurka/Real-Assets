@@ -7,21 +7,18 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaMapMarkerAlt, FaPhone
 const Footer = () => {
   return (
     <>
-      {/* Pre-Footer Box */}
-      <div className="pre-footer">
-        <p>Need a loan to purchase a piece of land?</p>
-        <button className="loan-btn">Get “ASAASE” Loan</button>
-      </div>
-
+      
       {/* Footer Section */}
       <footer className="footer-section">
+
+
         <div className="container">
           <div className="row">
             {/* Logo and Social Media */}
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <img src={logo} alt="Real Asset Logo" className="footer-logo" />
             </div>
-            <div className="col-lg-6 col-md-12 d-flex justify-content-end align-items-center social-icons">
+            <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-end align-items-center social-icons">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
@@ -78,7 +75,7 @@ const Footer = () => {
               <p>© Real Assets Limited. All Rights Reserved.</p>
             </div>
             <div className="col-lg-6 col-md-12 d-flex justify-content-end">
-              <p>Powered by COLDSiS</p>
+              <p> Powered by<a className="coldsis" href="Coldsis.com"> COLDSiS</a></p>
             </div>
           </div>
         </div>

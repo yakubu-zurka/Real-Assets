@@ -1,0 +1,121 @@
+ /* Original styling for larger screens remains unchanged */
+
+.core-values-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.core-heading {
+  font-family: Saira;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.core-values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.core-values-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Image styling */
+.image-column {
+  display: flex;
+  justify-content: center;
+}
+
+.core-values-image {
+  width: 490px;
+  height: 300px;
+}
+
+/* Responsive adjustments for medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .core-heading {
+    font-size: 2.5rem; /* Slightly reduce heading size */
+    text-align: center; /* Center heading */
+  }
+
+  .description {
+    font-size: 1.05rem; /* Slightly reduce description font size */
+    text-align: center; /* Center text */
+  }
+
+  .core-values-list li {
+    font-size: 1.1rem; /* Slightly reduce list font size */
+  }
+
+  .core-values-image {
+    width: 100%; /* Allow image to take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Responsive adjustments for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .core-values-section {
+    padding: 40px 0; /* Reduce padding */
+  }
+
+  .core-heading {
+    font-size: 2rem; /* Further reduce heading size */
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem; /* Adjust description font size */
+    text-align: center;
+  }
+
+  .core-values-list li {
+    justify-content: center; /* Center the list items */
+    font-size: 1.1rem;
+  }
+
+  .core-values-image {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .image-column {
+    margin-top: 30px; /* Add margin above image on smaller screens */
+  }
+}
+
+/* Responsive adjustments for extra small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .core-heading {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .description {
+    font-size: 0.95rem; /* Adjust font size for smaller screens */
+  }
+
+  .core-values-list li {
+    font-size: 1rem; /* Adjust list item font size */
+  }
+
+  .core-values-image {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,97 @@
+.branches-section {
+  padding: 30px 0;
+  background: rgba(57, 82, 116, 0.9);
+  text-align: center;
+  width:  100%;
+    
+}
+
+.Branches-section-heading {
+  color: white;
+  margin-bottom: 50px;
+  font-family: 'Saira', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* Branch Box Styling */
+.branch-box {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.branch-content {
+  background: rgba(57, 82, 116, 0.9);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 353px;
+  height: 112px;
+  border: 2px solid rgba(218, 165, 50, 1);
+}
+
+.branch-content h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+
+.branch-box:hover .branch-content {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styling */
+
+/* For medium screens (tablets, landscape phones) */
+@media (max-width: 991px) {
+  .branch-content {
+    padding: 35px;
+    width: 100%;
+    height: auto;
+  }
+
+  .Branches-section-heading {
+    font-size: 30px;
+  }
+
+  .branch-content h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* For smaller screens (portrait phones) */
+@media (max-width: 768px) {
+  .branch-content {
+    padding: 30px;
+  }
+
+  .Branches-section-heading {
+    font-size: 28px;
+  }
+
+  .branch-content h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* For extra small screens (small phones) */
+@media (max-width: 576px) {
+  .branch-content {
+    padding: 25px;
+  }
+
+  .Branches-section-heading {
+    font-size: 24px;
+  }
+
+  .branch-content h4 {
+    font-size: 1rem;
+  }
+
+  .branch-box {
+    margin-bottom: 20px;
+  }
+}
